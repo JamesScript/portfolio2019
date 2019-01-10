@@ -8,6 +8,10 @@
 body {
     font-family: 'Antic Slab', serif, sans-serif;
     margin: 0;
+    background: #FFEFBA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 main {
@@ -38,14 +42,44 @@ main {
     width: 95%;
 }
 
-.introPics * {
-    box-shadow: rgba(0, 0, 0, 0.5) 5px 8px 15px;
+/*.introPics * {*/
+    /*box-shadow: rgba(0, 0, 0, 0.5) 8px 10px 15px;*/
+/*}*/
+
+/*.introPics *:hover {*/
+    /*box-shadow: rgba(255, 255, 0, 0.5) 8px 10px 15px;*/
+/*}*/
+
+.introPics div {
+    box-shadow: rgba(0, 0, 0, 0.8) 8px 10px 15px;
+    cursor: pointer;
+    background: black;
+}
+
+.introPics div:hover {
+    box-shadow: rgba(255, 239, 186, 0.8) 8px 10px 15px;
 }
 
 #mePicDiv {
     grid-column: 1 / span 2;
     grid-row: 1 / span 3;
 }
+
+#bubbleLettersDiv {
+    grid-column: 1 / span 2;
+    overflow: hidden;
+    background: black;
+    text-align: center;
+}
+
+#bubbleLetters {
+    width: 80%;
+    height: 102%;
+}
+
+/*#kaleidoscopeDiv {*/
+    /*background: black;*/
+/*}*/
 
 .introPics img {
     width: 100%;
