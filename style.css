@@ -1,0 +1,83 @@
+/* TOP SECTION FOR WHOLE USER EXPERIENCE ON WEBSITE */
+
+@font-face {
+    font-family: 'Antic Slab';
+    src: url("Antic_Slab/AnticSlab-Regular.ttf")
+}
+
+body {
+    font-family: 'Antic Slab', serif, sans-serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+}
+
+.halfPage {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* INDIVIDUAL ELEMENTS BELOW */
+
+#myName {
+    font-size: 7vw;
+}
+
+.introPics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 3vw;
+    grid-row-gap: 3vh;
+    height: 95%;
+    width: 95%;
+}
+
+.introPics * {
+    box-shadow: rgba(0, 0, 0, 0.5) 5px 8px 15px;
+}
+
+.mePicDiv {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+}
+
+.mePic {
+    width: 100%;
+    height: 100%;
+}
+
+.introText {
+    font-size: 2vw;
+    padding: 30px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .halfPage {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .introText {
+        font-size: 2vh;
+    }
+}
+
+/* grid 3 columns for left pics */
+@media only screen and (max-width: 1010px) {
+    .introPics {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
