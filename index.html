@@ -4,33 +4,48 @@
     <meta charset="UTF-8">
     <title>James Cross</title>
     <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <!-- Will be divided horizontally for landscape screens and vertically for portrait (ie phones) -->
     <main>
         <div id="leftOrTop" class="halfPage">
             <div class="introPics">
-                <div class="mePicDiv">
-                    <img src="meStPeters.jpeg" alt="A photograph of James Cross" class="mePic">
+                <div class="introPicItem" id="mePicDiv">
+                    <img src="images/meStPeters.jpeg" alt="A photograph of James Cross" class="mePic">
                 </div>
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>A</div>
+                <div class="introPicItem">
+                    1
+                </div>
+                <div class="introPicItem">2</div>
+                <div class="introPicItem">3</div>
+                <div class="introPicItem">4</div>
+                <div class="introPicItem">5</div>
+                <div class="introPicItem">
+                    <img src="images/kaleidoscope.png" alt="" id="kaleidoscope">
+                </div>
+                <div class="introPicItem">
+                </div>
+                <div class="introPicItem">
+                </div>
+                <div class="introPicItem">
+                    <img src="images/codingDuet2.png" alt="" id="codingDuet2">
+                </div>
+                <div class="introPicItem">
+                    <img src="images/codingDuet.png" alt="" id="codingDuet">
+                </div>
             </div>
         </div>
         <div id="rightOrBottom" class="halfPage">
             <div class="introText">
                 <h1 id="myName">James Cross</h1>
                 <h2>Full-Stack JavaScript Developer</h2>
-                <p>I am a London based programmer who is indisputably obsessed with computer science and problem solving.</p>
-                <p>I hope you enjoy perusing my vast variety of work which includes: web design, full-stack web applications, games, data visualisation and more.</p>
+                <p>I am a London based programmer who is indisputably obsessed
+                    with computer science and problem solving.</p>
+                <p>I hope you enjoy perusing my vast variety of work which includes:
+                    web design, games, full-stack web applications,
+                    data visualisation and more.</p>
             </div>
         </div>
     </main>
