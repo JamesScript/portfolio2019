@@ -14,7 +14,15 @@ body {
 
 }
 
-main {
+.fixedOneSide {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100vh;
+}
+
+.fullPage {
     display: flex;
 }
 
@@ -28,8 +36,12 @@ main {
 
 /* INDIVIDUAL ELEMENTS BELOW */
 
-#myName {
+.bigHeader {
     font-size: 7vw;
+}
+
+.mediumHeader {
+    font-size: 4vw;
 }
 
 .introPics {
@@ -40,23 +52,16 @@ main {
     grid-row-gap: 3vh;
     height: 85%;
     width: 95%;
+    max-height: 100vh;
 }
 
-/*.introPics * {*/
-    /*box-shadow: rgba(0, 0, 0, 0.5) 8px 10px 15px;*/
-/*}*/
-
-/*.introPics *:hover {*/
-    /*box-shadow: rgba(255, 255, 0, 0.5) 8px 10px 15px;*/
-/*}*/
-
-.introPics div {
+.introPicItem {
     box-shadow: rgba(0, 0, 0, 0.8) 8px 10px 15px;
     cursor: pointer;
     background: black;
 }
 
-.introPics div:hover {
+.introPicItem:hover {
     box-shadow: rgba(255, 239, 186, 0.8) 8px 10px 15px;
 }
 
@@ -76,10 +81,6 @@ main {
     width: 80%;
     height: 102%;
 }
-
-/*#kaleidoscopeDiv {*/
-    /*background: black;*/
-/*}*/
 
 .introPics img {
     width: 100%;

@@ -9,8 +9,8 @@
 </head>
 <body>
     <!-- Will be divided horizontally for landscape screens and vertically for portrait (ie phones) -->
-    <main>
-        <div id="leftOrTop" class="halfPage">
+    <div class="fixedOneSide">
+        <div class="halfPage">
             <div class="introPics">
                 <!-- GRID 2 x 3 -->
                 <div class="introPicItem" id="mePicDiv">
@@ -48,9 +48,12 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="fullPage">
+        <div class="halfPage"></div>
         <div id="rightOrBottom" class="halfPage">
             <div class="introText">
-                <h1 id="myName">James Cross</h1>
+                <h1 class="bigHeader">James Cross</h1>
                 <h2>Full-Stack JavaScript Developer</h2>
                 <p>I am a London based programmer who is indisputably obsessed
                     with computer science and problem solving.</p>
@@ -59,6 +62,15 @@
                     data visualisation and more.</p>
             </div>
         </div>
-    </main>
+    </div>
+    <div class="fullPage">
+        <div class="halfPage"></div>
+        <div class="halfPage">
+            <div id="nodeJsText">
+                <h1 class="mediumHeader">Full-Stack Node.js Applications</h1>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
