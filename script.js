@@ -10,6 +10,16 @@ $(window).scroll(event => {
     scrollTop = $(window).scrollTop();
     console.log(scrollTop);
     parallaxBackground();
+    // REFACTOR THIS
+    // get heights of each element and work out where the next section starts
+    if (scrollTop > window.innerHeight * 1.4) {
+        $("#section_0")
+            .addClass("vanish")
+            .css({"pointer-events": "none"});
+        $("#section_1")
+            .addClass("appear")
+            .css({"pointer-events": "auto"});
+    }
 });
 
 function parallaxBackground() {
