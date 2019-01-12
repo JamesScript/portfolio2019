@@ -175,11 +175,11 @@ body {
 /* ANIMATIONS */
 
 .vanish {
-    animation: vanish 1s linear 0s forwards;
+    animation: vanish 600ms linear 0s forwards;
 }
 
 .appear {
-    animation: appear 1s linear 0s forwards;
+    animation: appear 600ms linear 0s forwards;
 }
 
 @keyframes vanish {
