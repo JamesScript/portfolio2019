@@ -8,10 +8,9 @@
 body {
     font-family: 'Antic Slab', serif, sans-serif;
     margin: 0;
-    background: #FFEFBA;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFFFFF, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFFFFF, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: black;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #FFFFFF, #FFFFFF, #FFEFBA);  !* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: linear-gradient(to right, #FFFFFF, #FFFFFF, #FFEFBA); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
 }
 
 .fixedOneSide {
@@ -20,10 +19,18 @@ body {
     left: 0;
     width: 50vw;
     height: 100vh;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* HIDE ALL OTHER FIXED ONE SIDE ELEMENTS SO THEY CAN BE FADED IN */
+
+.fixedOneSide:nth-child(n+2) {
+    opacity: 0;
 }
 
 .fullPage {
     display: flex;
+    background: #FAFAFA;  /* fallback for old browsers */
 }
 
 .halfPage {
@@ -89,7 +96,36 @@ body {
 
 .introText {
     font-size: 2vw;
+}
+
+.textPadding {
     padding: 30px;
+}
+
+/* WINDOW THAT REVEALS BACKGROUND */
+
+#codingBackground {
+    height: 50vh;
+    background-image: url("images/oxfordCircusMeet2.jpg");
+    background-attachment: fixed;
+    background-size: 140% 140%;
+    background-position: 0 -10px;
+}
+
+/* NODE.JS SHOWCASE SECTION */
+
+.project {
+    display: flex;
+}
+
+.projectImage {
+    width: 200px;
+    height: 200px;
+}
+
+.projectImage img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* MEDIA QUERIES */
@@ -111,13 +147,14 @@ body {
 }
 
 /* grid 3 columns for left pics */
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1064px) {
     .introPics {
         grid-template-columns: repeat(3, 1fr);
     }
 
     .introPicItem:nth-child(n+8) {
         display: none;
+        /*opacity: 0;*/
     }
 
     .introText {
