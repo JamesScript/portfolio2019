@@ -1,15 +1,29 @@
-// $(window).resize();
+// Calculates the proportions of a variable's value between two limits to another pair of limits
+const mapCalc = (n, start1, stop1, start2, stop2) => ((n-start1)/(stop1-start1))*(stop2-start2)+start2;
 
-const mapCalc = function(n, start1, stop1, start2, stop2) {
-    return ((n-start1)/(stop1-start1))*(stop2-start2)+start2;
-};
+// Determines what to show on the left / top based on where the user has scrolled to
 let leftSection = 0;
 
+// Scrolling global variables
 let scrollTop = 0;
+let scrolling = false;
 
-$(window).scroll(event => {
+// Scrolling events
+$(window).scroll(() => {
+    scrolling = true;
+});
+
+// Interval to check whether user is scrolling, to run function below it
+setInterval(() => {
+    if (scrolling) {
+        scrollHandler();
+        scolling = false;
+    }
+}, 10);
+
+// Only call this every few milliseconds as not to slow down performance
+function scrollHandler() {
     scrollTop = $(window).scrollTop();
-    console.log(scrollTop);
     parallaxBackground();
     // REFACTOR THIS
     // get heights of each element and work out where the next section starts
@@ -35,10 +49,11 @@ $(window).scroll(event => {
             .removeClass("vanish")
             .css({"pointer-events": "auto"});
     }
+}
 
-});
-
+// Background parallax - move at different speed to scrolling
 function parallaxBackground() {
-    let bgPosition = mapCalc(scrollTop, 0, window.innerHeight * 1.5, 0, -50);
+    let bgPosition = mapCalc(scrollTop, 0, window.innerHeight * 1.5, 0, -100);
     $("#codingBackground").css({"background-position": `0 ${bgPosition}px`})
 }
+

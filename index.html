@@ -10,7 +10,8 @@
 <body>
     <!-- Will be divided horizontally for landscape screens and vertically for portrait (ie phones) -->
     <div class="fixedOneSide" id="section_0">
-        <div class="halfPage">
+        <!--<div class="halfPage">-->
+        <div class="leftSide">
             <div class="introPics">
                 <!-- GRID 2 x 3 -->
                 <div class="introPicItem" id="mePicDiv">
@@ -49,16 +50,26 @@
             </div>
         </div>
     </div>
+    <!-- LEFT SIDE FOR NODE SHOWCASE -->
     <div class="fixedOneSide" id="section_1">
         <div class="halfPage">
             <img src="images/nodeLogo.png" alt="" id="nodeLogo">
         </div>
     </div>
+    <!---->
     <div class="fixedOneSide" id="section_2">
         <div class="halfPage">
             <img src="images/kaleidoscope.png" alt="">
         </div>
     </div>
+
+    <!--
+    ==========
+    RIGHT SIDE (bottom if mobile / portrait)
+    ==========
+    -->
+
+    <!---->
     <div class="fullPage">
         <div class="halfPage"></div>
         <div class="halfPage">
@@ -81,21 +92,65 @@
         <div class="halfPage">
             <div class="nodeJsText textPadding">
                 <h1 class="mediumHeader">Node.js Applications</h1>
-                <div id="crossMeDescription" class="project">
+                <div id="astroDavidDescription" class="project">
                     <div class="projectImage">
-                        <img src="images/crossMe.png" alt="Cross Me, a game">
+                        <a href="https://astro-david.herokuapp.com/">
+                            <img src="images/astroDavid.png" alt="Astro David, a classic space shooter with working hiscore table">
+                        </a>
                     </div>
                     <div class="projectText">
-                        <h2>CROSS ME</h2>
-                        <p>An online multiplayer retro arcade style game. Chase your friend or friends around a room and try to finish them off
-                            before they do it to you first! Collect power ups before they do for an advantage... or the complete opposite if you're
-                            unlucky.</p>
-                        <p>Technologies used: HTML, CSS, JavaScript, p5, Node.js, Express, Socket</p>
+                        <a href="https://astro-david.herokuapp.com/">
+                            <h2>ASTRO DAVID</h2>
+                            <p>A classic and addictive space-shooter game that is cross compatible across
+                                handheld and desktop devices. This was originally a standalone browser game; I later introduced
+                                node.js to add a public hiscore table to the game. Now you can make your mark and show your skills
+                                off to the world should you perform well.
+                            </p>
+                        </a>
+                        <p>Technologies used: HTML, CSS, JavaScript, jQuery, p5, Hammer, Howler, Node.js, Express, MongoDB, Mongoose</p>
                         <a href="https://github.com/crossjames934/CrossMe" target="_blank"><p>See the code on Github</p></a>
                     </div>
                 </div>
+                <div id="crossMeDescription" class="project">
+                    <div class="projectImage">
+                        <a href="https://cross-me.herokuapp.com/" target="_blank">
+                            <img src="images/crossMe.png" alt="Cross Me, online multiplayer game">
+                        </a>
+                    </div>
+                    <div class="projectText">
+                        <a href="https://cross-me.herokuapp.com/" target="_blank">
+                            <h2>CROSS ME</h2>
+                            <p>An online multiplayer retro arcade style game. Chase your friend or friends around a room and try to finish them off
+                                before they do it to you first! Collect power ups before they do for an advantage... or the complete opposite if you're
+                                unlucky.</p>
+                            <p>Technologies used: HTML, CSS, JavaScript, jQuery, p5, Node.js, Express, Socket</p>
+                        </a>
+                        <a href="https://github.com/crossjames934/CrossMe" target="_blank"><p>See the code on Github</p></a>
+                    </div>
+                </div>
+                <div id="exerciseTrackerDescription" class="project">
+                    <div class="projectImage">
+                        <a href="https://jc-fcc-exercise-tracker.glitch.me/" target="_blank">
+                            <img src="images/exerciseTracker.png" alt="Exercise tracker">
+                        </a>
+                    </div>
+                    <div class="projectText">
+                        <a href="https://jc-fcc-exercise-tracker.glitch.me/" target="_blank">
+                            <h2>EXERCISE TRACKER</h2>
+                            <p>A page where you can join up as a user to post your exercise progress. Compare your progress with other
+                                workout fanatics.
+                            </p>
+                            <p>Technologies used: HTML, CSS, JavaScript, Node.js, Express, MongoDB, Mongoose</p>
+                        </a>
+                        <a href="https://github.com/crossjames934/CrossMe" target="_blank"><p>See the code on Github</p></a>
+                    </div>
+                </div>
+                <p>&#11015; Click here to see more Node.js projects &#11015;</p>
             </div>
         </div>
+    </div>
+    <div class="windowToBackground" id="lakeBackground">
+
     </div>
 </body>
 </html>

@@ -13,6 +13,11 @@ body {
     /*background: linear-gradient(to right, #FFFFFF, #FFFFFF, #FFEFBA); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .fixedOneSide {
     position: fixed;
     top: 0;
@@ -20,6 +25,13 @@ body {
     width: 50vw;
     height: 100vh;
     background: rgba(255, 255, 255, 0.5);
+}
+
+.leftSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 /* HIDE ALL OTHER FIXED ONE SIDE ELEMENTS SO THEY CAN BE FADED IN */
@@ -36,7 +48,7 @@ body {
 
 .halfPage {
     width: 50vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +72,6 @@ body {
     grid-row-gap: 3vh;
     height: 85%;
     width: 95%;
-    max-height: 100vh;
 }
 
 .introPicItem {
@@ -105,12 +116,20 @@ body {
 
 /* WINDOW THAT REVEALS BACKGROUND */
 
-#codingBackground {
+.windowToBackground {
     height: 50vh;
-    background-image: url("images/oxfordCircusMeet2.jpg");
     background-attachment: fixed;
     background-size: 140% 140%;
     background-position: 0 -10px;
+}
+
+#codingBackground {
+    background-image: url("images/oxfordCircusMeet2.jpg");
+}
+
+#lakeBackground {
+    background-size: 120% 120%;
+    background-image: url("images/lakeFlip.jpg");
 }
 
 /* NODE.JS SHOWCASE SECTION */
@@ -126,8 +145,8 @@ body {
 }
 
 .projectImage img {
-    height: 100%;
-    width: auto;
+    width: 200px;
+    height: 200px;
 }
 
 .projectText {
@@ -140,24 +159,8 @@ body {
 
 /* MEDIA QUERIES */
 
-/* switch to portrait view, one on top one on bottom */
-@media only screen and (max-width: 600px) {
-    main {
-        flex-direction: column;
-    }
-
-    .halfPage {
-        height: 50vh;
-        width: 100vw;
-    }
-
-    .introText {
-        font-size: 2vh;
-    }
-}
-
 /* grid 3 columns for left pics */
-@media only screen and (max-width: 1064px) {
+@media only screen and (max-width: 1164px) {
     .introPics {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -169,6 +172,46 @@ body {
 
     .introText {
         font-size: 2.3vw;
+    }
+}
+
+/* switch to portrait view, one on top one on bottom */
+@media only screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .introText {
+        font-size: 2vh;
+    }
+
+    .fixedOneSide {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 50vh;
+        background: rgba(255, 255, 255, 0.5);
+    }
+
+    .halfPage {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .introPics {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 3vw;
+        grid-row-gap: 3vh;
+        height: 85%;
+        width: 95%;
+    }
+
+    .introPicItem:nth-child(n) {
+        display: block;
+        /*opacity: 0;*/
     }
 }
 
