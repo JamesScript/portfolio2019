@@ -14,46 +14,60 @@
         <div class="leftSide">
             <div class="introPics">
                 <!-- GRID 2 x 3 -->
-                <div class="introPicItem" id="mePicDiv">
+                <div class="picItem" id="mePicDiv">
                     <img src="images/meStPeters.jpeg" alt="A photograph of James Cross" class="mePic">
                 </div>
-                <div class="introPicItem">
+                <div class="picItem">
                     <img src="images/astroDavid.png" alt="space shooter game" id="astroDavid">
                 </div>
-                <div class="introPicItem">
+                <div class="picItem">
                     <img src="images/escapeTheSpikes.png" alt="intense timed maths game" id="escapeTheSpikes">
                 </div>
-                <div class="introPicItem">
+                <div class="picItem">
                     <img src="images/nuclearFallin.png" alt="my first platformer game" id="nuclearFallin">
                 </div>
-                <div class="introPicItem">
+                <div class="picItem">
                     <img src="images/drumMachine.png" alt="a beat composer" id="drumMachine">
                 </div>
-                <div class="introPicItem">
+                <div class="picItem">
                     <img src="images/audioVis.png" alt="audio visualisation" id="audioVis">
                 </div>
-                <div class="introPicItem" id="kaleidoscopeDiv">
+                <div class="picItem" id="kaleidoscopeDiv">
                     <img src="images/kaleidoscope.png" alt="" id="kaleidoscope">
                 </div>
                 <!-- GRID 2 x 1 -->
-                <div class="introPicItem" id="bubbleLettersDiv">
+                <div class="picItem" id="bubbleLettersDiv">
                     <img src="images/jcBubbleLetters.gif" alt="" id="bubbleLetters">
                 </div>
                 <!--<div class="introPicItem">-->
                 <!--</div>-->
-                <div class="introPicItem">
+                <div class="picItem">
                     <img src="images/codingDuet2.png" alt="" id="codingDuet2">
                 </div>
-                <div class="introPicItem">
+                <div class="picItem">
                     <img src="images/codingDuet.png" alt="" id="codingDuet">
                 </div>
             </div>
         </div>
     </div>
+
     <!-- LEFT SIDE FOR NODE SHOWCASE -->
     <div class="fixedOneSide" id="section_1">
-        <div class="halfPage">
-            <img src="images/nodeLogo.png" alt="" id="nodeLogo">
+        <div class="leftSide">
+            <div class="nodePics">
+                <div class="picItem" id="nodeLogoContainer">
+                    <img src="images/nodeLogo.png" alt="" id="nodeLogo">
+                </div>
+                <div class="picItem">
+                    <img src="images/astroDavid.png" alt="">
+                </div>
+                <div class="picItem">
+                    <img src="images/crossMe.png" alt="">
+                </div>
+                <div class="picItem">
+                    <img src="images/exerciseTracker.png" alt="">
+                </div>
+            </div>
         </div>
     </div>
     <!---->
@@ -78,9 +92,19 @@
                 <h2>JavaScript and Node.js Developer</h2>
                 <p>I am a London based programmer who is indisputably obsessed
                     with computer science and problem solving.</p>
-                <p>I hope you enjoy perusing my vast variety of work which includes:
-                    web design, games, full-stack web applications,
-                    data visualisation and more.</p>
+                <!--<p>I hope you enjoy perusing my vast variety of work which includes:-->
+                    <!--web design, games, full-stack web applications,-->
+                    <!--data visualisation and more.</p>-->
+                <p>
+                    I hope you enjoy perusing my vast variety of work which includes:
+                </p>
+                <ul>
+                    <li>web design</li>
+                    <li>games</li>
+                    <li>full-stack web applications</li>
+                    <li>data visualisation</li>
+                </ul>
+                <p>and more.</p>
             </div>
         </div>
     </div>
@@ -94,12 +118,12 @@
                 <h1 class="mediumHeader">Node.js Applications</h1>
                 <div id="astroDavidDescription" class="project">
                     <div class="projectImage">
-                        <a href="https://astro-david.herokuapp.com/">
+                        <a href="https://astro-david.herokuapp.com/" target="_blank">
                             <img src="images/astroDavid.png" alt="Astro David, a classic space shooter with working hiscore table">
                         </a>
                     </div>
                     <div class="projectText">
-                        <a href="https://astro-david.herokuapp.com/">
+                        <a href="https://astro-david.herokuapp.com/" target="_blank">
                             <h2>ASTRO DAVID</h2>
                             <p>A classic and addictive space-shooter game that is cross compatible across
                                 handheld and desktop devices. This was originally a standalone browser game; I later introduced
@@ -149,8 +173,35 @@
             </div>
         </div>
     </div>
-    <div class="windowToBackground" id="lakeBackground">
+    <div class="windowToBackground" id="oxfordCircusBackground">
 
+    </div>
+    <div class="fullPage">
+        <div class="halfPage"></div>
+        <div class="halfPage">
+            <div class="nodeJsText textPadding">
+                <h1 class="mediumHeader">Data Visualisation</h1>
+                <div id="mapOfUSAProject" class="project">
+                    <div class="projectImage">
+                        <a href="https://astro-david.herokuapp.com/" target="_blank">
+                            <img src="images/usaMap.png" alt="Astro David, a classic space shooter with working hiscore table">
+                        </a>
+                    </div>
+                    <div class="projectText">
+                        <a href="https://astro-david.herokuapp.com/" target="_blank">
+                            <h2>ACADEMIC PROWESS IN THE USAgit </h2>
+                            <p>A classic and addictive space-shooter game that is cross compatible across
+                                handheld and desktop devices. This was originally a standalone browser game; I later introduced
+                                node.js to add a public hiscore table to the game. Now you can make your mark and show your skills
+                                off to the world should you perform well.
+                            </p>
+                        </a>
+                        <p>Technologies used: HTML, CSS, JavaScript, jQuery, p5, Hammer, Howler, Node.js, Express, MongoDB, Mongoose</p>
+                        <a href="https://github.com/crossjames934/CrossMe" target="_blank"><p>See the code on Github</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
