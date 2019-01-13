@@ -119,17 +119,16 @@ a {
 .windowToBackground {
     height: 50vh;
     background-attachment: fixed;
-    background-size: 140% 140%;
+    background-size: 110% 120%;
     background-position: 0 -10px;
 }
 
 #codingBackground {
-    background-image: url("images/oxfordCircusMeet2.jpg");
+    background-image: url("images/codefather.png");
 }
 
 #lakeBackground {
-    background-size: 120% 120%;
-    background-image: url("images/lakeFlip.jpg");
+    background-image: url("images/oxfordCircusMeet2.jpg");
 }
 
 /* NODE.JS SHOWCASE SECTION */
