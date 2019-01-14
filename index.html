@@ -57,12 +57,44 @@
         </div>
     </div>
 
-    <!-- LEFT SIDE FOR NODE SHOWCASE -->
+    <!-- LEFT SIDE FOR GAME SHOWCASE -->
     <div class="fixedOneSide" id="section_1">
+        <div class="leftSide">
+            <div class="gamePics">
+                <div class="picItem" id="gamingPicContainer">
+                    <img src="images/gaming.jpeg" alt="" id="gamingPic">
+                </div>
+                <div class="picItem">
+                    <img src="images/simonGame.png" alt="">
+                </div>
+                <div class="picItem">
+                    <img src="images/multiplicationGame.png" alt="">
+                </div>
+                <div class="picItem">
+                    <img src="images/astroDavid.png" alt="">
+                </div>
+                <div class="picItem">
+                    <img src="images/ticTacToe.png" alt="">
+                </div>
+                <div class="picItem">
+                    <img src="images/crossMe.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LEFT SIDE FOR NODE SHOWCASE -->
+    <div class="fixedOneSide" id="section_2">
         <div class="leftSide">
             <div class="nodePics">
                 <div class="picItem" id="nodeLogoContainer">
                     <img src="images/nodeLogo.png" alt="" id="nodeLogo">
+                </div>
+                <div class="picItem" id="fullStackExplanation">
+                    <p>All of my full-stack projects use Node.js for the back end.
+                        Any that require a database use mLab to store the data, with
+                        MongoDB and Mongoose npm packages to manage the transfer of data.
+                    </p>
                 </div>
                 <div class="picItem">
                     <img src="images/astroDavid.png" alt="">
@@ -77,7 +109,7 @@
         </div>
     </div>
     <!---->
-    <div class="fixedOneSide" id="section_2">
+    <div class="fixedOneSide" id="section_3">
         <div class="halfPage">
             <img src="images/kaleidoscope.png" alt="">
         </div>
@@ -90,7 +122,7 @@
     -->
 
     <!---->
-    <div class="fullPage">
+    <div class="fullPage" id="introFullPage">
         <div class="halfPage"></div>
         <div class="halfPage">
             <div class="introText textPadding">
@@ -105,24 +137,130 @@
                     I hope you enjoy perusing my vast variety of work which includes:
                 </p>
                 <ul>
-                    <li>web design</li>
                     <li>games</li>
+                    <li>front-end web applications</li>
                     <li>full-stack web applications</li>
                     <li>data visualisation</li>
+                    <li>artwork and audio visualisation</li>
                 </ul>
-                <p>and more.</p>
             </div>
         </div>
     </div>
     <div class="windowToBackground" id="codingBackground">
 
     </div>
-    <div class="fullPage">
+    <div class="fullPage" id="gamesFullPage">
+        <div class="halfPage"></div>
+        <div class="halfPage">
+            <div class="gamesText textPadding">
+                <h1 class="mediumHeader">Games</h1>
+                <div id="astroDavidDescription1" class="project">
+                    <div class="projectImage">
+                        <a href="https://astro-david.herokuapp.com/" target="_blank">
+                            <img src="images/astroDavid.png" alt="Astro David, a classic space shooter with working hiscore table">
+                        </a>
+                    </div>
+                    <div class="projectText">
+                        <a href="https://astro-david.herokuapp.com/" target="_blank">
+                            <h2>ASTRO DAVID</h2>
+                            <p>A classic and addictive space-shooter game that is cross compatible across
+                                handheld and desktop devices. This was originally a standalone browser game; I later introduced
+                                node.js to add a public hiscore table to the game. Now you can make your mark and show your skills
+                                off to the world should you perform well. I challenged myself by making this without using the p5
+                                framework for canvas animation.
+                            </p>
+                        </a>
+                        <p>Technologies used: HTML, CSS, JavaScript, jQuery, Hammer, Howler, Node.js, Express, MongoDB, Mongoose</p>
+                        <a href="https://github.com/crossjames934/CrossMe" target="_blank"><p>See the code on Github</p></a>
+                    </div>
+                </div>
+                <div id="nuclearFallinDescription" class="project">
+                    <div class="projectImage">
+                        <a href="#" target="_blank">
+                            <img src="images/nuclearFallin.png" alt="Nuclear Fall In, platformer game">
+                        </a>
+                    </div>
+                    <div class="projectText">
+                        <a href="#" target="_blank">
+                            <h2>NUCLEAR FALL IN</h2>
+                            <p>My first platformer game. A nuclear bomb has gone off on the surface, see how far
+                                underground you can escape. Can you avoid all the deadly traps?
+                                I created a level generator so that I could draw the tiles and export the
+                                layout as a string, with each character representing a different type of object. I designed
+                                the artwork on <a href="https://www.piskelapp.com/" target="_blank">Piskel</a>. I also produced
+                                the music in Logic Pro. Please note this is one of my first projects so the code isn't the most
+                                efficient performance wise, and some devices may struggle to run this game properly.
+                            </p>
+                        </a>
+                        <p>Technologies used: HTML, CSS, JavaScript, p5, Logic Pro, Piskel</p>
+                        <a href="#" target="_blank"><p>See the code on Github</p></a>
+                    </div>
+                </div>
+                <div id="escapeTheSpikesDescription" class="project">
+                    <div class="projectImage">
+                        <a href="https://astro-david.herokuapp.com/" target="_blank">
+                            <img src="images/escapeTheSpikes.png" alt="Escape The Spikes, an intense educational game for practising mental maths">
+                        </a>
+                    </div>
+                    <div class="projectText">
+                        <a href="#" target="_blank">
+                            <h2>ESCAPE THE SPIKES</h2>
+                            <p>An intense educational game for practising mental maths. Dive right in to practise your times tables, or go
+                                to the settings to challenge yourself in other areas. Tested in classrooms, children respond to it well as
+                                it gets them very engaged, just beware that one or two of them may get too passionate and start screaming.
+                                You have been warned.
+                            </p>
+                        </a>
+                        <p>Technologies used: HTML, CSS, JavaScript, p5</p>
+                        <a href="#" target="_blank"><p>See the code on Github</p></a>
+                    </div>
+                </div>
+                <p>&#11015; Click here to see more games &#11015;</p>
+            </div>
+        </div>
+    </div>
+    <div class="windowToBackground" id="oxfordCircusBackground">
+
+    </div>
+
+    <!-- STANDALONE APPS AND PAGES -->
+    <div class="fullPage" id="standaloneFullPage">
         <div class="halfPage"></div>
         <div class="halfPage">
             <div class="nodeJsText textPadding">
-                <h1 class="mediumHeader">Node.js Applications</h1>
-                <div id="astroDavidDescription" class="project">
+                <h1 class="mediumHeader">Front-End Applications and Web Pages</h1>
+                <div id="drumMachineDescription" class="project">
+                    <div class="projectImage">
+                        <a href="https://codepen.io/crossjames934/pen/xJJvjy" target="_blank">
+                            <img src="images/drumMachine.png" alt="Drum machine and beat composer">
+                        </a>
+                    </div>
+                    <div class="projectText">
+                        <a href="https://astro-david.herokuapp.com/" target="_blank">
+                            <h2>DRUM MACHINE AND BEAT COMPOSER</h2>
+                            <p>Use the keyboard to make drum sounds, get some practise and you'll be able to play
+                                a cool beat on your laptop. Click on the little rectangles to compose your own beat.
+                                Change the BPM as you listen back to your composition.
+                            </p>
+                        </a>
+                        <p>Technologies used: Pug, SCSS, Babel, JavaScript, React, Redux</p>
+                        <a href="https://github.com/crossjames934/CrossMe" target="_blank"><p>See the code on Github</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="windowToBackground" id="codingBackground2">
+
+    </div>
+
+    <!-- FULL STACK APPS -->
+    <div class="fullPage" id="fullStackFullPage">
+        <div class="halfPage"></div>
+        <div class="halfPage">
+            <div class="nodeJsText textPadding">
+                <h1 class="mediumHeader">Full-Stack Applications</h1>
+                <div id="astroDavidDescription2" class="project">
                     <div class="projectImage">
                         <a href="https://astro-david.herokuapp.com/" target="_blank">
                             <img src="images/astroDavid.png" alt="Astro David, a classic space shooter with working hiscore table">
@@ -179,7 +317,7 @@
             </div>
         </div>
     </div>
-    <div class="windowToBackground" id="oxfordCircusBackground">
+    <div class="windowToBackground" id="choirBackground">
 
     </div>
     <div class="fullPage">
@@ -195,7 +333,7 @@
                     </div>
                     <div class="projectText">
                         <a href="https://astro-david.herokuapp.com/" target="_blank">
-                            <h2>ACADEMIC PROWESS IN THE USAgit </h2>
+                            <h2>ACADEMIC PROWESS IN THE USA</h2>
                             <p>A classic and addictive space-shooter game that is cross compatible across
                                 handheld and desktop devices. This was originally a standalone browser game; I later introduced
                                 node.js to add a public hiscore table to the game. Now you can make your mark and show your skills
