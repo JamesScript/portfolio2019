@@ -47,7 +47,8 @@ a {
 
 .fullPage {
     display: flex;
-    background: #FAFAFA;  /* fallback for old browsers */
+    /*background: #FAFAFA;*/
+    background: white;
 }
 
 .halfPage {
@@ -81,7 +82,7 @@ a {
 .picItem {
     box-shadow: rgba(0, 0, 0, 0.8) 8px 10px 15px;
     cursor: pointer;
-    background: black;
+    /*background: black;*/
     width: 100%;
     height: 100%;
 }
@@ -135,7 +136,7 @@ a {
 }
 
 #codingBackground {
-    background-image: url("images/codefather.png");
+    background-image: url("images/codefather.jpg");
 }
 
 #oxfordCircusBackground {
@@ -143,11 +144,20 @@ a {
 }
 
 #codingBackground2 {
-    background-image: url("images/codingDuet.png");
+    background-image: url("images/axeThrowing.jpg");
 }
 
 #choirBackground {
     background-image: url("images/showChoir.jpg");
+}
+
+#codingBehindBackground {
+    background-image: url("images/codingBack.jpg");
+}
+
+#lakeBackground {
+    background-image: url("images/lakeFlip.jpg");
+    height: 100vh;
 }
 
 /* GAMING SHOWCASE SECTION */
@@ -163,12 +173,52 @@ a {
 }
 
 #gamingPicContainer {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
+    /*grid-column: 1 / span 2;*/
+    /*grid-row: 1 / span 2;*/
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
     cursor: default;
+}
+
+#gamingLeftDescription {
+    grid-column: 2 / span 2;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    cursor: auto;
+}
+
+/* FRONT-END SHOWCASE SECTION */
+
+.frontEndPics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 3vw;
+    grid-row-gap: 3vh;
+    height: 85%;
+    width: 95%;
+}
+
+#frontEndTrioContainer {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    cursor: auto;
+}
+
+/*#frontEndTrio {*/
+    /*width: 80%;*/
+    /*height: 80%;*/
+/*}*/
+
+#frontEndLeftDescription {
+    grid-column: 2 / span 2;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    cursor: auto;
 }
 
 /* NODE.JS SHOWCASE SECTION */
@@ -185,8 +235,8 @@ a {
 
 #nodeLogoContainer {
     background: inherit;
-    grid-column: 1 / span 3;
-    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+    /*grid-row: 1 / span 1;*/
     text-align: center;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -195,20 +245,56 @@ a {
 }
 
 #nodeLogo {
-    max-width: 30%;
+    max-width: 50%;
     max-height: 100%;
 }
 
 #fullStackExplanation {
     background: inherit;
-    grid-column: 1 / span 3;
-    grid-row: 2 / span 1;
+    /*grid-column: 2 / span 1;*/
+    /*grid-row: 2 / span 1;*/
     text-align: center;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
     cursor: default;
 }
+
+/* DATA VIS LEFT SECTION */
+
+.dataVisPics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 3vw;
+    grid-row-gap: 3vh;
+    height: 85%;
+    width: 95%;
+}
+
+#dataVisLogoContainer {
+    text-align: center;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    cursor: default;
+}
+
+#dataVisLeftDescription {
+    grid-column: 2 / span 2;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    cursor: auto;
+}
+
+/* ABOUT ME LEFT */
+
+.aboutMeText {
+    padding: 50px;
+}
+
+/* INDIVIDUAL PROJECTS */
 
 .project {
     display: flex;
@@ -229,6 +315,7 @@ a {
     padding: 10px;
 }
 
+/**/
 
 
 /* MEDIA QUERIES */
@@ -260,7 +347,7 @@ a {
 
 /* switch to portrait view, one on top one on bottom */
 @media only screen and (max-width: 600px) {
-    main {
+    .fullPage {
         flex-direction: column;
     }
 
