@@ -59,6 +59,34 @@ a {
     align-items: center;
 }
 
+.leftGrid {
+    display: grid;
+    grid-column-gap: 3vw;
+    grid-row-gap: 3vh;
+    height: 85%;
+    width: 95%;
+}
+
+.threeByThreeGrid {
+    grid-template-columns: repeat(3, 13vw);
+    grid-template-rows: repeat(3, 26vh);
+}
+
+.leftDescription {
+    /*grid-column: 2 / span 2;*/
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    cursor: auto;
+    font-size: calc(0.6vw + 0.7vh);
+    text-align: center;
+    background: inherit;
+}
+
+.leftDescription p {
+    cursor: auto !important;
+}
+
 /* INTRODUCTORY SECTION */
 
 .bigHeader {
@@ -69,14 +97,11 @@ a {
     font-size: 4vw;
 }
 
-.introPics {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 3vw;
-    grid-row-gap: 3vh;
-    height: 85%;
-    width: 95%;
+#introPics {
+    /*grid-template-columns: repeat(4, 1fr);*/
+    /*grid-template-rows: repeat(4, 1fr);*/
+    grid-template-columns: repeat(4, 9vw);
+    grid-template-rows: repeat(4, 20vh);
 }
 
 .picItem {
@@ -162,14 +187,12 @@ a {
 
 /* GAMING SHOWCASE SECTION */
 
-.gamePics {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 3vw;
-    grid-row-gap: 3vh;
-    height: 85%;
-    width: 95%;
+
+#gamePics {
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /*grid-template-rows: repeat(3, 1fr);*/
+    /*grid-template-columns: repeat(3, 13vw);*/
+    /*grid-template-rows: repeat(3, 26vh);*/
 }
 
 #gamingPicContainer {
@@ -186,19 +209,15 @@ a {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    cursor: auto;
+    /*cursor: auto;*/
+    /*font-size: calc(0.6vw + 0.7vh);*/
 }
 
 /* FRONT-END SHOWCASE SECTION */
 
-.frontEndPics {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 3vw;
-    grid-row-gap: 3vh;
-    height: 85%;
-    width: 95%;
+#frontEndPics {
+    /*grid-template-columns: repeat(3, 13vw);*/
+    /*grid-template-rows: repeat(3, 26vh);*/
 }
 
 #frontEndTrioContainer {
@@ -223,19 +242,19 @@ a {
 
 /* NODE.JS SHOWCASE SECTION */
 
-.nodePics {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 3vw;
-    grid-row-gap: 3vh;
-    height: 85%;
-    width: 95%;
-}
+/*#nodePics {*/
+    /*display: grid;*/
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /*grid-template-rows: repeat(3, 1fr);*/
+    /*grid-column-gap: 3vw;*/
+    /*grid-row-gap: 3vh;*/
+    /*height: 85%;*/
+    /*width: 95%;*/
+/*}*/
 
 #nodeLogoContainer {
     background: inherit;
-    grid-column: 1 / span 2;
+    /*grid-column: 1 / span 2;*/
     /*grid-row: 1 / span 1;*/
     text-align: center;
     -webkit-box-shadow: none;
@@ -251,26 +270,26 @@ a {
 
 #fullStackExplanation {
     background: inherit;
-    /*grid-column: 2 / span 1;*/
-    /*grid-row: 2 / span 1;*/
+    grid-column: 2 / span 2;
+    /*grid-row: 3 / span 1;*/
     text-align: center;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-    cursor: default;
+    cursor: auto;
 }
 
 /* DATA VIS LEFT SECTION */
 
-.dataVisPics {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 3vw;
-    grid-row-gap: 3vh;
-    height: 85%;
-    width: 95%;
-}
+/*#dataVisPics {*/
+    /*display: grid;*/
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /*grid-template-rows: repeat(3, 1fr);*/
+    /*grid-column-gap: 3vw;*/
+    /*grid-row-gap: 3vh;*/
+    /*height: 85%;*/
+    /*width: 95%;*/
+/*}*/
 
 #dataVisLogoContainer {
     text-align: center;
@@ -322,11 +341,11 @@ a {
 
 /* grid 3 columns for left pics */
 @media only screen and (max-width: 1164px) {
-    .introPics {
+    #introPics {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .picItem:nth-child(n+8) {
+    #introPics .picItem:nth-child(n+8) {
         display: none;
         /*opacity: 0;*/
     }
@@ -351,25 +370,39 @@ a {
         flex-direction: column;
     }
 
+    .halfPage {
+        /*height: 50vh;*/
+        width: 100vw;
+    }
+
+    .bigHeader {
+        font-size: 8vh;
+    }
+
+    .halfPage:nth-child(odd) {
+        display: none;
+    }
+
     .introText {
-        font-size: 2vh;
+        font-size: 3vh;
     }
 
     .fixedOneSide {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 50vh;
-        background: rgba(255, 255, 255, 0.5);
+        display: none;
+        /*position: fixed;*/
+        /*top: 0;*/
+        /*left: 0;*/
+        /*width: 100vw;*/
+        /*height: 50vh;*/
+        /*background: rgba(255, 255, 255, 0.5);*/
     }
 
-    .halfPage {
-        height: 50vh;
+    #section_6 {
+        display: block;
         width: 100vw;
     }
 
-    .introPics {
+    #introPics {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(3, 1fr);

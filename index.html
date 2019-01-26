@@ -12,7 +12,7 @@
     <div class="fixedOneSide" id="section_0">
         <!--<div class="halfPage">-->
         <div class="leftSide">
-            <div class="introPics">
+            <div class="leftGrid" id="introPics">
                 <!-- GRID 2 x 3 -->
                 <div class="picItem" id="mePicDiv">
                     <img src="images/meStPeters.jpeg" alt="A photograph of James Cross" class="mePic">
@@ -60,11 +60,11 @@
     <!-- LEFT SIDE FOR GAME SHOWCASE -->
     <div class="fixedOneSide" id="section_1">
         <div class="leftSide">
-            <div class="gamePics">
+            <div class="leftGrid threeByThreeGrid" id="gamePics">
                 <div class="picItem" id="gamingPicContainer">
                     <img src="images/gaming.png" alt="" id="gamingPic">
                 </div>
-                <div class="picItem" id="gamingLeftDescription">
+                <div class="picItem leftDescription" id="gamingLeftDescription">
                     <p>I grew up with lots of games on both computers and consoles. I always wanted to make my own game as a child, and
                     ended up making a very basic point-and-click adventure using hyperlinks and HTML pages generated in MS Word. As a
                     teen I explored Flash and Actionscript to make more point and click adventures, this is when I first used variables
@@ -96,16 +96,22 @@
     <!-- LEFT SIDE FOR FRONT-END SHOWCASE -->
     <div class="fixedOneSide" id="section_2">
         <div class="leftSide">
-            <div class="frontEndPics">
+            <div class="leftGrid threeByThreeGrid" id="frontEndPics">
                 <div class="picItem" id="frontEndTrioContainer">
                     <img src="images/frontEndTrio.png" alt="" id="frontEndTrio">
                 </div>
-                <div id="frontEndLeftDescription">
+                <div class="picItem leftDescription" id="frontEndLeftDescription">
                     <p>I am fascinated by the HTML, CSS and JS trio and the way they interact with
                         one another. I love how there's always more than one way of going about a
                         particular task and each often has their own pros and cons. I also enjoy
                         experimenting with preprocessors (Pug, Haml, Scss and Sass) as well as
                         the famous front-end framework React.</p>
+                </div>
+                <div class="picItem">
+                    <img src="images/computerScienceQuiz.png" alt="">
+                </div>
+                <div class="picItem">
+                    <img src="images/summaryOfHumanHistory.png" alt="">
                 </div>
                 <div class="picItem">
                     <img src="images/drumMachine.png" alt="">
@@ -117,12 +123,6 @@
                     <img src="images/wikipediaViewer.png" alt="">
                 </div>
                 <div class="picItem">
-                    <img src="images/innovativeInteriors.png" alt="">
-                </div>
-                <div class="picItem">
-                    <img src="images/surveyForm.png" alt="">
-                </div>
-                <div class="picItem">
                     <img src="images/3dQuoteMachine.png" alt="">
                 </div>
             </div>
@@ -132,15 +132,20 @@
     <!-- LEFT SIDE FOR NODE SHOWCASE -->
     <div class="fixedOneSide" id="section_3">
         <div class="leftSide">
-            <div class="nodePics">
+            <div class="leftGrid threeByThreeGrid" id="nodePics">
                 <div class="picItem" id="nodeLogoContainer">
                     <img src="images/nodeLogo.png" alt="" id="nodeLogo">
                 </div>
-                <div class="picItem" id="fullStackExplanation">
-                    <p>All of my full-stack projects use Node.js for the back end.
+                <div class="picItem leftDescription" id="fullStackExplanation">
+                    <p>As challenging as full stack development can be, I really love
+                        how anything is possible with it. If it can be concieved of, it can
+                        be done. All of my full-stack projects use Node.js for the back end.
                         Any that require a database use mLab to store the data, with
                         MongoDB and Mongoose npm packages to manage the transfer of data.
                     </p>
+                </div>
+                <div class="picItem">
+                    <img src="images/gameReviews.png" alt="">
                 </div>
                 <div class="picItem">
                     <img src="images/astroDavid.png" alt="">
@@ -159,11 +164,11 @@
     <!-- DATA VISUALISATION LEFT SIDE -->
     <div class="fixedOneSide" id="section_4">
         <div class="leftSide">
-            <div class="dataVisPics">
+            <div class="leftGrid threeByThreeGrid" id="dataVisPics">
                 <div class="picItem" id="dataVisLogoContainer">
                     <img src="images/dataVis.png" alt="" id="dataVisLogo">
                 </div>
-                <div class="picItem" id="dataVisLeftDescription">
+                <div class="picItem leftDescription" id="dataVisLeftDescription">
                     <p>Data can be presented in a multitude of beautiful ways. What
                         I find particularly exciting about in-browser data visualisation
                         is the interactive aspect of it all. I have been using D3 to produce
@@ -192,9 +197,33 @@
     <!-- ART AND AUDIO VIS LEFT SIDE -->
     <div class="fixedOneSide" id="section_5">
         <div class="leftSide">
-            <div class="artPics">
-                <div class="picItem" id="artLogoContainer">
-                    <img src="images/artLeft.png" alt="" id="artLogo">
+            <div class="leftGrid threeByThreeGrid" id="artPics">
+                <div class="picItem">
+                    <img src="images/kaleidoscope.png" alt="">
+                </div>
+                <div class="picItem">
+                    <img src="images/burstOfLife.png" alt="">
+                </div>
+                <div class="picItem">
+                    <img src="images/poppyField.png" alt="">
+                </div>
+                <div class="picItem">
+                    <img src="images/fireflies.png" alt="">
+                </div>
+                <div class="picItem">
+                    <img src="images/hueDoughnut.png" alt="">
+                </div>
+                <div class="picItem">
+                    <img src="images/loadingIcon.png" alt="">
+                </div>
+                <div class="picItem">
+                    <img src="images/spinTunnel.png" alt="">
+                </div>
+                <div class="picItem">
+                    <img src="images/worm.png" alt="">
+                </div>
+                <div class="picItem">
+                    <img src="images/floatTowardsTheLight.png" alt="">
                 </div>
             </div>
         </div>
@@ -204,17 +233,17 @@
         <div class="aboutMeContainer">
             <div class="aboutMeText">
                 <h1 class="mediumHeader">About Me</h1>
-                <p>The path I took to discovering my passion for code was far from a convetional one, but I would not
+                <p>The path I took to discovering my passion for code was rather unconventional and I would not
                     change a thing, as the decisions I made in life led me to where I am today.</p>
                 <p>I did a masters degree in Music at The University of Sussex. I love music and I was inspired by my
                     rock musician father to study this field further. The MA did more than teach me about music, it taught
-                    me how to think. It taught me how to approach problems from different angles, and gave me the ability to
-                    think outside the box.</p>
-                <p>Following my graduation I got into teaching, I did various Teaching Assistant roles until I ended up
+                    me how to think outside the box and approach problems from different angles.</p>
+                <p>Following my graduation I did various Teaching Assistant roles until I ended up
                     as a Higher Level Teaching Assistant and was given the responsibility of taking my own classes. I loved teaching
-                    mathetmatics, problem solving and most of all - IT! Children find programming fascinating and this makes me
-                    hopeful about the future of computer science. The senior leadership team noticed my undeniable passion for the
-                    subject and made me the official IT Coordinator for the school.</p>
+                    mathematics, problem solving and most of all - Information Technology. I set up a coding club which became consistently oversubscribed;
+                    a parent pleaded with me saying their child was losing sleep over whether they would get into my club! Children find
+                    programming fascinating and this makes me hopeful about the future of computer science. The senior leadership team
+                    noticed my undeniable passion for the subject and made me the official IT Coordinator for the school.</p>
                 <p>Since my discovery of JavaScript and code in general, it has become very obvious to me what my calling
                     is in life. I have started tutoring professionally and mentoring / debugging at coding events in London.</p>
                 <p>I am now looking to further my skills with like-minded individuals, and I look forward to a bright future
@@ -245,11 +274,11 @@
                     I hope you enjoy perusing my vast variety of work which includes:
                 </p>
                 <ul>
-                    <li>games</li>
-                    <li>front-end web applications</li>
-                    <li>full-stack web applications</li>
-                    <li>data visualisation</li>
-                    <li>artwork and audio visualisation</li>
+                    <li>Games</li>
+                    <li>Front-end web applications</li>
+                    <li>Full-stack web applications</li>
+                    <li>Data visualisation</li>
+                    <li>Artwork and audio visualisation</li>
                 </ul>
             </div>
         </div>
