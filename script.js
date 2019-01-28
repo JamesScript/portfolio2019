@@ -14,6 +14,7 @@ const secondCodingBackground = $("#codingBackground2");
 const choirBackground = $("#choirBackground");
 const codingBehindBackground = $("#codingBehindBackground");
 const lakeBackground = $("#lakeBackground");
+const allBackgrounds = [codingBackground, oxfordCircusBackground, secondCodingBackground, choirBackground, codingBehindBackground, lakeBackground];
 
 // Reset these values if window resized
 let gapHeight = codingBackground.outerHeight(true);
@@ -52,7 +53,7 @@ setInterval(() => {
         grabNewHeights();
         scrolling = false;
     }
-}, 50);
+}, 20);
 
 // Window Resized
 function grabNewHeights() {
@@ -69,33 +70,13 @@ function grabNewHeights() {
     secondCodingBGPos = secondCodingBackground.offset().top;
     choirBGPos = choirBackground.offset().top;
     behindBGPos = codingBehindBackground.offset().top;
+    lakeBGPos = lakeBackground.offset().top;
     scrollHandler();
 }
 
 // Only call this every few milliseconds as not to slow down performance
 function scrollHandler() {
     scrollTop = $(window).scrollTop();
-    parallaxBackground();
-    // Sections array - used to refactor previous code
-    // The array contains sub-arrays with two element determining different scroll limits
-    // The first value [0] in each sub-array determines where the content will change when the user scrolls DOWN
-    // The second value [1] determines where the content will switch back when the user scrolls UP
-    // const sections = [
-    //     [0,
-    //         gapHeight],
-    //     [introHeight,
-    //         introHeight + gameHeight],
-    //     [introHeight + gapHeight + gameHeight,
-    //         introHeight + gameHeight + frontEndHeight + gapHeight],
-    //     [introHeight + gameHeight + frontEndHeight + gapHeight * 2,
-    //         introHeight + gameHeight + frontEndHeight + fullStackHeight + gapHeight * 2],
-    //     [introHeight + gameHeight + frontEndHeight + fullStackHeight + gapHeight * 3,
-    //         introHeight + gameHeight + frontEndHeight + fullStackHeight + dataVisHeight + gapHeight * 3],
-    //     [introHeight + gameHeight + frontEndHeight + fullStackHeight + dataVisHeight + gapHeight * 4,
-    //         introHeight + gameHeight + frontEndHeight + fullStackHeight + dataVisHeight + artHeight + gapHeight * 4],
-    //     [introHeight + gameHeight + frontEndHeight + fullStackHeight + dataVisHeight + artHeight + gapHeight * 4,
-    //         Infinity]
-    // ];
     const sections = [
         0,
         codingBGPos,
@@ -103,11 +84,11 @@ function scrollHandler() {
         secondCodingBGPos,
         choirBGPos,
         behindBGPos,
-        lakeBGPos - gapHeight / 2,
+        lakeBGPos - gapHeight / 3,
         Infinity
     ];
     for (let i = 0; i < sections.length - 1; i++) {
-        if (leftSection !== i && scrollTop > sections[i] && scrollTop < sections[i+1] - gapHeight) {
+        if (leftSection !== i && scrollTop >= sections[i] && scrollTop < sections[i+1] - gapHeight) {
             $("#section_" + leftSection)
                 .addClass("vanish")
                 .removeClass("appear")
@@ -119,11 +100,22 @@ function scrollHandler() {
             leftSection = i;
         }
     }
+    parallaxBackground(sections);
 }
 
 // Background parallax - move at different speed to scrolling
-function parallaxBackground() {
-    let bgPosition = mapCalc(scrollTop, 0, window.innerHeight * 1.5, 100, -100);
-    $("#codingBackground").css({"background-position": `0 ${bgPosition}px`});
+function parallaxBackground(sections) {
+    const bottomOfScreen = scrollTop + window.innerHeight;
+    for (let i = 0; i < sections.length - 2; i++) {
+        const topOfSection = sections[i+1];
+        if (bottomOfScreen >= topOfSection - window.innerHeight && scrollTop <= topOfSection + gapHeight) {
+            let bgPosition = mapCalc(bottomOfScreen, topOfSection, topOfSection + gapHeight + window.innerHeight, 100, -100);
+            let bgWidth = mapCalc(window.innerWidth, 600, 1400, 300, 100);
+            allBackgrounds[i].css({
+                "background-position": `0 ${bgPosition}px`
+                // "background-size": bgWidth + "% 120%"
+            });
+        }
+    }
 }
 

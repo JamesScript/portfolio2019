@@ -18,9 +18,9 @@ a {
     color: inherit;
 }
 
-/*ul {*/
-    /*list-style: none;*/
-/*}*/
+ul {
+    list-style: square;
+}
 
 .fixedOneSide {
     position: fixed;
@@ -91,6 +91,7 @@ a {
 
 .bigHeader {
     font-size: 7vw;
+    margin: 0;
 }
 
 .mediumHeader {
@@ -156,7 +157,7 @@ a {
 .windowToBackground {
     height: 50vh;
     background-attachment: fixed;
-    background-size: 110% 120%;
+    background-size: 100% 120%;
     background-position: 0 -10px;
 }
 
@@ -310,7 +311,12 @@ a {
 /* ABOUT ME LEFT */
 
 .aboutMeText {
-    padding: 50px;
+    padding: 40px;
+    font-size: calc(0.2vw + 1.8vh);
+}
+
+#aboutMeTitle {
+    margin: 10px;
 }
 
 /* INDIVIDUAL PROJECTS */
@@ -377,6 +383,10 @@ a {
 
     .bigHeader {
         font-size: 8vh;
+    }
+
+    .mediumHeader {
+        font-size: 7vh;
     }
 
     .halfPage:nth-child(odd) {

@@ -5,6 +5,7 @@
     <title>James Cross</title>
     <link rel="stylesheet" href="style.css">
     <script src="jquery-3.3.1.min.js"></script>
+    <script src="projects.js" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -232,7 +233,7 @@
     <div class="fixedOneSide" id="section_6">
         <div class="aboutMeContainer">
             <div class="aboutMeText">
-                <h1 class="mediumHeader">About Me</h1>
+                <h1 class="mediumHeader" id="aboutMeTitle">About Me</h1>
                 <p>The path I took to discovering my passion for code was rather unconventional and I would not
                     change a thing, as the decisions I made in life led me to where I am today.</p>
                 <p>I did a masters degree in Music at The University of Sussex. I love music and I was inspired by my
@@ -598,10 +599,9 @@
                     <div class="projectText">
                         <a href="https://astro-david.herokuapp.com/" target="_blank">
                             <h2>AUDIO BUBBLES</h2>
-                            <p>A classic and addictive space-shooter game that is cross compatible across
-                                handheld and desktop devices. This was originally a standalone browser game; I later introduced
-                                node.js to add a public hiscore table to the game. Now you can make your mark and show your skills
-                                off to the world should you perform well.
+                            <p>My first project using waveform analysis with p5.sound.js. I mapped the intensity of each
+                                frequency to a height to which the bubbles travel, and used a translucent background to
+                                give the appealing blurry effect.
                             </p>
                         </a>
                         <p>Technologies used: HTML, CSS, JavaScript, jQuery, p5, Hammer, Howler, Node.js, Express, MongoDB, Mongoose</p>
