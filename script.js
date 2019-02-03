@@ -115,6 +115,7 @@ function parallaxBackground(sections) {
                 "background-position": `0 ${bgPosition}px`
                 // "background-size": bgWidth + "% 120%"
             });
+            break;
         }
     }
 }
