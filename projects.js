@@ -197,5 +197,205 @@ const projects = [
         image: "gdp.png",
         url: "https://codepen.io/crossjames934/pen/wxQKzp?editors=0010",
         github: null
+    },
+    {
+        title: "Heat Map",
+        category: [dataVis],
+        technologies: [_html, _css, _js, _D3],
+        description: "An interactive heat map graph. Displays the effect of climate change.",
+        image: "heatMap.png",
+        url: "https://codepen.io/crossjames934/pen/LBqrNO",
+        github: null
+    },
+    {
+        title: "Hue Doughnut",
+        category: [art],
+        technologies: [_html, _css, _js, _p5],
+        description: "A colourful animated doughnut built using p5",
+        image: "hueDoughtnut.png",
+        url: "https://codepen.io/crossjames934/pen/LBqrNO",
+        github: null
+    },
+    {
+        title: "James Cross Bubble Letters",
+        category: [art],
+        technologies: [_html, _css, _js, _p5],
+        description: "My name in pulsating colourful letters.",
+        image: "jcBubbleLetters.gif",
+        url: "https://jamescrosslettering.glitch.me/",
+        github: null
+    },
+    {
+        title: "Kaleidoscope: None Of This Is Real",
+        category: [art],
+        technologies: [_html, _css, _js, _p5],
+        description: "Out of all the kaleidoscopic patterns I have created using code, this is my favourite.",
+        image: "kaleidoscope.png",
+        url: "https://codepen.io/crossjames934/pen/YdePdK",
+        github: null
+    },
+    {
+        title: "Loading Icon",
+        category: [art],
+        technologies: [_html, _css, _js, _p5],
+        description: "A loading icon I animated using p5",
+        image: "loadingIcon.png",
+        url: "https://codepen.io/crossjames934/pen/GXQvqP",
+        github: null
+    },
+    {
+        title: "Multiplication Game",
+        category: [games],
+        technologies: [_html, _css, _js, _p5],
+        description: "One of my first ever games, test your multiplication skills in this fast-paced addictive game. Dodge the wrong answers while trying" +
+            "to bump into the right one.",
+        image: "loadingIcon.png",
+        url: "https://codepen.io/crossjames934/pen/GXQvqP",
+        github: null
+    },
+    {
+        title: "Nuclear Fall In",
+        category: [games],
+        technologies: [_html, _css, _js, _p5],
+        description: "My first platformer game. A nuclear bomb has gone off on the surface, see how far" +
+            "underground you can escape. Can you avoid all the deadly traps?" +
+            "I created a level generator so that I could draw the tiles and export the" +
+            "layout as a string, with each character representing a different type of object. I designed" +
+            "the artwork on Piskel. I also produced" +
+            "the music in Logic Pro. Please note this is one of my first projects so the code isn't the most" +
+            "efficient performance wise, and some devices may struggle to run this game properly.",
+        image: "nuclearFallin.png",
+        url: "",
+        github: null
+    },
+    {
+        title: "Poppy Field",
+        category: [art],
+        technologies: [_html, _css, _js, _p5],
+        description: "A procedurally generated poppy field, refresh the page to see the mountains and poppies in a new formation.",
+        image: "poppyField.png",
+        url: "https://codepen.io/crossjames934/pen/QJbwKO",
+        github: null
+    },
+    {
+        title: "Recipe Box",
+        category: [frontEnd],
+        technologies: [_html, _css, _js, _babel, _react],
+        description: "One of my earliest React projects, a recipe box which you can customise.",
+        image: "recipeBox.png",
+        url: "https://codepen.io/crossjames934/pen/PaZZGR",
+        github: null
+    },
+    {
+        title: "Synthetic Sakura",
+        category: [art],
+        technologies: [_html, _css, _js, _p5],
+        description: "A moving breathing fractal tree, looks like a cherry blossom or Sakura.",
+        image: "sakura.png",
+        url: "https://codepen.io/crossjames934/pen/dQQLMJ",
+        github: null
+    },
+    {
+        title: "Simon Game Dubstep Edition",
+        category: [art],
+        technologies: [_pug, _scss, _js],
+        description: "There are many recreations of the classic Simon Game online, but I have yet to come across one that produces" +
+            "dubstep music as you play like mine does.",
+        image: "simonGame.png",
+        url: "https://codepen.io/crossjames934/pen/RMGpOM",
+        github: null
+    },
+    {
+        title: "Spin Tunnel",
+        category: [art],
+        technologies: [_html, _css, _js, _p5],
+        description: "Spin the tunnel by moving the mouse across it horizontally.",
+        image: "spinTunnel.png",
+        url: "https://codepen.io/crossjames934/pen/OrpYoN",
+        github: null
+    },
+    {
+        title: "Summary of Human History",
+        category: [frontEnd],
+        technologies: [_html, _css, _js, _babel, _react],
+        description: "A page that uses a Wikipedia API to get information on pages about different centuries, so you can scroll through the history of humankind." +
+            "I used React because it deals with asynchronous API requests with ease and each segment is procedurally generated with JSX and JavaScript algorithms.",
+        image: "summaryOfHumanHistory.png",
+        url: "https://codepen.io/crossjames934/pen/xmNRNM",
+        github: null
+    },
+    {
+        title: "Survey Form",
+        category: [frontEnd],
+        technologies: [_pug, _scss, _js],
+        description: "A sample survey form. Practise for my Pug skills.",
+        image: "surveyForm.png",
+        url: "https://codepen.io/crossjames934/pen/yEgzPR",
+        github: null
+    },
+    {
+        title: "Tic Tac Toe",
+        category: [games],
+        technologies: [_html, _css, _js, _p5],
+        description: "A Noughts and Crosses / Tic Tac Toe game. " +
+            "This was a real challenge as I wanted to program a 'Hard' mode where the computer was unbeatable. You can also play 2P mode.",
+        image: "ticTacToe.png",
+        url: "https://codepen.io/crossjames934/pen/xWZdba",
+        github: null
+    },
+    {
+        title: "Canvas Game Tutorial",
+        category: [frontEnd],
+        technologies: [_html, _css, _js],
+        description: "A step-by-step tutorial on how to make a HTML5 Canvas game without using frameworks like p5.",
+        image: "tutorial.png",
+        url: "https://codepen.io/crossjames934/pen/oyELzE",
+        github: null
+    },
+    {
+        title: "Choropleth Map: Academic Prowess in the USA",
+        category: [frontEnd],
+        technologies: [_html, _css, _js, _D3],
+        description: "An interactive Choropleth Map that shows which states in the USA have higher University Degree attainment.",
+        image: "usaMap.png",
+        url: "https://codepen.io/crossjames934/pen/LBaEOZ?editors=0011",
+        github: null
+    },
+    {
+        title: "Tree Map: Video Game Sales",
+        category: [frontEnd],
+        technologies: [_html, _css, _js, _D3],
+        description: "A tree map which represents the amounts of games that were sold for each console. Has different viewing options available.",
+        image: "videoGameSales.png",
+        url: "https://codepen.io/crossjames934/pen/pOoRNx",
+        github: null
+    },
+    {
+        title: "Wikipedia Viewer",
+        category: [frontEnd],
+        technologies: [_html, _css, _js, _jquery, _p5],
+        description: "My first wikipedia API project, search for something and what the results fill the page. Bubbles animated using P5.",
+        image: "wikipediaViewer.png",
+        url: "https://codepen.io/crossjames934/pen/jZPzaK",
+        github: null
+    },
+    {
+        title: "Maths Joke Work Sheet Generator",
+        category: [frontEnd],
+        technologies: [_html, _css, _js, _babel, _react],
+        description: "Automatically generate a maths work sheet in which your pupils answer maths questions to reveal the punchline to a joke." +
+            " Customise your own level of difficulty and joke.",
+        image: "workSheetGenerator.png",
+        url: "https://codepen.io/crossjames934/pen/XqJMvj?editors=0010",
+        github: null
+    },
+    {
+        title: "Worm",
+        category: [art],
+        technologies: [_html, _css, _js, _p5],
+        description: "A worm that moves according to two Perlin Noise algorithms working alongside (for x and y coordinates respectively).",
+        image: "worm.png",
+        url: "https://codepen.io/crossjames934/pen/VrvWoy",
+        github: null
     }
 ];
