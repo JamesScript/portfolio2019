@@ -1,9 +1,9 @@
 // Store commonly referred to things as variables
 // CATEGORIES
 const games = "games";
-const frontEnd = "front end";
-const fullStack = "full-stack";
-const dataVis = "data visualisation";
+const frontEnd = "front_end";
+const fullStack = "full_stack";
+const dataVis = "data_visualisation";
 const art = "art";
 
 // TECHNOLOGIES
@@ -30,7 +30,6 @@ const _socket = "socket.io";
 const _passport = "passport";
 const _helmet = "helmet";
 
-
 // Projects
 const projects = [
     {
@@ -40,7 +39,8 @@ const projects = [
         description: "A simple 3d game where you have to jump over the boxes. Levels are procedurally generated.",
         image: "3dDavidGame.png",
         url: "",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "3D Quote Machine",
@@ -49,7 +49,8 @@ const projects = [
         description: "Generates random quotes which descend in 3D lettering. You can use the keyboard to control the camera view of the text.",
         image: "3dQuoteMachine.png",
         url: "https://codepen.io/crossjames934/pen/LdLbyP",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Scatterplot Graph: Doping Allegations and Athletic Performance",
@@ -59,7 +60,8 @@ const projects = [
             "It compares the results of those who were caught doping and those who weren't.",
         image: "allegations.png",
         url: "https://codepen.io/crossjames934/pen/PBVYJr",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Astro David",
@@ -71,7 +73,8 @@ const projects = [
             "this without using the p5 framework for canvas animation.",
         image: "astroDavid.png",
         url: "https://david-in-space.glitch.me/",
-        github: null
+        github: null,
+        featured: true
     },
     {
         title: "Audio Bubbles",
@@ -82,7 +85,8 @@ const projects = [
             "to give the appealing blurry effect. Music composed and vocals by me.",
         image: "audioVis.png",
         url: "https://audiovis.glitch.me/",
-        github: null
+        github: null,
+        featured: true
     },
     {
         title: "Burst of Life",
@@ -91,7 +95,8 @@ const projects = [
         description: "A mathematically generated patterns that grows in intensity with time.",
         image: "burstOfLife.png",
         url: "https://codepen.io/crossjames934/pen/ZVyEWo",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Computer Science Quiz",
@@ -100,16 +105,19 @@ const projects = [
         description: "A quiz that utilises questions derived from an API. I used React for this project as it is great for handling asynch requests. Will you get 10/10?",
         image: "computerScienceQuiz.png",
         url: "https://codepen.io/crossjames934/pen/ebojjq",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Cross Me",
         category: [games, fullStack],
         technologies: [_html, _css, _js, _p5, _node, _socket, _express, _mongodb, _mongoose],
-        description: "",
+        description: "My first online multiplayer game, choose a room then shoot your friends. Collect power ups before they do to get an edge, " +
+            "or a handicap if you're unlucky.",
         image: "crossMe.png",
         url: "https://cross-me.glitch.me/",
-        github: null
+        github: null,
+        featured: true
     },
     {
         title: "Crosstopia City",
@@ -118,16 +126,18 @@ const projects = [
         description: "A procedurally generate city with parallax effect. No images, just code.",
         image: "crosstopiaCity.png",
         url: "https://codepen.io/crossjames934/pen/pqJRQQ",
-        github: null
+        github: null,
+        featured: true
     },
     {
         title: "Drones",
         category: [frontEnd],
         technologies: [_pug, _css, _js],
         description: "A product landing page for drones. I utilised Pug to generate this page.",
-        image: "astroDavid.png",
+        image: "drones.png",
         url: "https://codepen.io/crossjames934/pen/JZOEqV",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Drum Machine and Beat Composer",
@@ -138,7 +148,8 @@ const projects = [
             "Change the BPM as you listen back to your composition.",
         image: "drumMachine.png",
         url: "https://codepen.io/crossjames934/pen/xJJvjy",
-        github: null
+        github: null,
+        featured: true
     },
     {
         title: "Escape The Spikes",
@@ -150,7 +161,8 @@ const projects = [
             "You have been warned.",
         image: "escapeTheSpikes.png",
         url: "",
-        github: null
+        github: null,
+        featured: true
     },
     {
         title: "Exercise Tracker",
@@ -159,7 +171,8 @@ const projects = [
         description: "A page where you can join up as a user to post your exercise progress. Compare your progress with other workout fanatics.",
         image: "exerciseTracker.png",
         url: "https://jc-fcc-exercise-tracker.glitch.me/",
-        github: null
+        github: null,
+        featured: true
     },
     {
         title: "Fireflies",
@@ -168,7 +181,8 @@ const projects = [
         description: "I used the Perlin Noise function provided by p5 to animate they fireflies that seem to have a life of their own.",
         image: "fireflies.png",
         url: "https://codepen.io/crossjames934/pen/Rxyjdr",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Float Towards The Light",
@@ -177,7 +191,8 @@ const projects = [
         description: "A kaleidoscopic animated pattern, it grows the longer you let it run.",
         image: "floatTowardsTheLight.png",
         url: "https://codepen.io/crossjames934/pen/QZPYar",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Game Reviews",
@@ -187,7 +202,8 @@ const projects = [
             "Authenticate yourself through Facebook, Google or Github to get up and running in a couple of clicks.",
         image: "gameReviews.png",
         url: "https://game-reviews.glitch.me/",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "GDP Bar Chart",
@@ -196,7 +212,8 @@ const projects = [
         description: "My first D3 project, an interactive bar chart that shows GDP data over time.",
         image: "gdp.png",
         url: "https://codepen.io/crossjames934/pen/wxQKzp?editors=0010",
-        github: null
+        github: null,
+        featured: true
     },
     {
         title: "Heat Map",
@@ -205,16 +222,18 @@ const projects = [
         description: "An interactive heat map graph. Displays the effect of climate change.",
         image: "heatMap.png",
         url: "https://codepen.io/crossjames934/pen/LBqrNO",
-        github: null
+        github: null,
+        featured: true
     },
     {
         title: "Hue Doughnut",
         category: [art],
         technologies: [_html, _css, _js, _p5],
         description: "A colourful animated doughnut built using p5",
-        image: "hueDoughtnut.png",
+        image: "hueDoughnut.png",
         url: "https://codepen.io/crossjames934/pen/LBqrNO",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "James Cross Bubble Letters",
@@ -223,7 +242,8 @@ const projects = [
         description: "My name in pulsating colourful letters.",
         image: "jcBubbleLetters.gif",
         url: "https://jamescrosslettering.glitch.me/",
-        github: null
+        github: null,
+        featured: true
     },
     {
         title: "Kaleidoscope: None Of This Is Real",
@@ -232,7 +252,8 @@ const projects = [
         description: "Out of all the kaleidoscopic patterns I have created using code, this is my favourite.",
         image: "kaleidoscope.png",
         url: "https://codepen.io/crossjames934/pen/YdePdK",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Loading Icon",
@@ -241,7 +262,8 @@ const projects = [
         description: "A loading icon I animated using p5",
         image: "loadingIcon.png",
         url: "https://codepen.io/crossjames934/pen/GXQvqP",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Multiplication Game",
@@ -249,9 +271,10 @@ const projects = [
         technologies: [_html, _css, _js, _p5],
         description: "One of my first ever games, test your multiplication skills in this fast-paced addictive game. Dodge the wrong answers while trying" +
             "to bump into the right one.",
-        image: "loadingIcon.png",
-        url: "https://codepen.io/crossjames934/pen/GXQvqP",
-        github: null
+        image: "multiplicationGame.png",
+        url: "https://codepen.io/crossjames934/pen/LeQXZw",
+        github: null,
+        featured: false
     },
     {
         title: "Nuclear Fall In",
@@ -265,8 +288,9 @@ const projects = [
             "the music in Logic Pro. Please note this is one of my first projects so the code isn't the most" +
             "efficient performance wise, and some devices may struggle to run this game properly.",
         image: "nuclearFallin.png",
-        url: "",
-        github: null
+        url: "https://s3.amazonaws.com/aws-website-nuclearfallin-y1bb0/nuclearFallIn.html",
+        github: null,
+        featured: true
     },
     {
         title: "Poppy Field",
@@ -275,7 +299,8 @@ const projects = [
         description: "A procedurally generated poppy field, refresh the page to see the mountains and poppies in a new formation.",
         image: "poppyField.png",
         url: "https://codepen.io/crossjames934/pen/QJbwKO",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Recipe Box",
@@ -284,7 +309,8 @@ const projects = [
         description: "One of my earliest React projects, a recipe box which you can customise.",
         image: "recipeBox.png",
         url: "https://codepen.io/crossjames934/pen/PaZZGR",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Synthetic Sakura",
@@ -293,17 +319,19 @@ const projects = [
         description: "A moving breathing fractal tree, looks like a cherry blossom or Sakura.",
         image: "sakura.png",
         url: "https://codepen.io/crossjames934/pen/dQQLMJ",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Simon Game Dubstep Edition",
-        category: [art],
+        category: [games],
         technologies: [_pug, _scss, _js],
         description: "There are many recreations of the classic Simon Game online, but I have yet to come across one that produces" +
             "dubstep music as you play like mine does.",
         image: "simonGame.png",
         url: "https://codepen.io/crossjames934/pen/RMGpOM",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Spin Tunnel",
@@ -312,7 +340,8 @@ const projects = [
         description: "Spin the tunnel by moving the mouse across it horizontally.",
         image: "spinTunnel.png",
         url: "https://codepen.io/crossjames934/pen/OrpYoN",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Summary of Human History",
@@ -322,7 +351,8 @@ const projects = [
             "I used React because it deals with asynchronous API requests with ease and each segment is procedurally generated with JSX and JavaScript algorithms.",
         image: "summaryOfHumanHistory.png",
         url: "https://codepen.io/crossjames934/pen/xmNRNM",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Survey Form",
@@ -331,7 +361,8 @@ const projects = [
         description: "A sample survey form. Practise for my Pug skills.",
         image: "surveyForm.png",
         url: "https://codepen.io/crossjames934/pen/yEgzPR",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Tic Tac Toe",
@@ -341,7 +372,8 @@ const projects = [
             "This was a real challenge as I wanted to program a 'Hard' mode where the computer was unbeatable. You can also play 2P mode.",
         image: "ticTacToe.png",
         url: "https://codepen.io/crossjames934/pen/xWZdba",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Canvas Game Tutorial",
@@ -350,25 +382,27 @@ const projects = [
         description: "A step-by-step tutorial on how to make a HTML5 Canvas game without using frameworks like p5.",
         image: "tutorial.png",
         url: "https://codepen.io/crossjames934/pen/oyELzE",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Choropleth Map: Academic Prowess in the USA",
-        category: [frontEnd],
+        category: [dataVis],
         technologies: [_html, _css, _js, _D3],
         description: "An interactive Choropleth Map that shows which states in the USA have higher University Degree attainment.",
         image: "usaMap.png",
         url: "https://codepen.io/crossjames934/pen/LBaEOZ?editors=0011",
-        github: null
+        github: null,
+        featured: true
     },
     {
         title: "Tree Map: Video Game Sales",
-        category: [frontEnd],
+        category: [dataVis],
         technologies: [_html, _css, _js, _D3],
         description: "A tree map which represents the amounts of games that were sold for each console. Has different viewing options available.",
         image: "videoGameSales.png",
         url: "https://codepen.io/crossjames934/pen/pOoRNx",
-        github: null
+        github: null, featured: false
     },
     {
         title: "Wikipedia Viewer",
@@ -377,7 +411,8 @@ const projects = [
         description: "My first wikipedia API project, search for something and what the results fill the page. Bubbles animated using P5.",
         image: "wikipediaViewer.png",
         url: "https://codepen.io/crossjames934/pen/jZPzaK",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Maths Joke Work Sheet Generator",
@@ -387,7 +422,8 @@ const projects = [
             " Customise your own level of difficulty and joke.",
         image: "workSheetGenerator.png",
         url: "https://codepen.io/crossjames934/pen/XqJMvj?editors=0010",
-        github: null
+        github: null,
+        featured: false
     },
     {
         title: "Worm",
@@ -396,6 +432,7 @@ const projects = [
         description: "A worm that moves according to two Perlin Noise algorithms working alongside (for x and y coordinates respectively).",
         image: "worm.png",
         url: "https://codepen.io/crossjames934/pen/VrvWoy",
-        github: null
+        github: null,
+        featured: false
     }
 ];

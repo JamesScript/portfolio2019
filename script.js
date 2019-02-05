@@ -18,12 +18,6 @@ const allBackgrounds = [codingBackground, oxfordCircusBackground, secondCodingBa
 
 // Reset these values if window resized
 let gapHeight = codingBackground.outerHeight(true);
-// let introHeight = introSection.outerHeight(true);
-// let gameHeight = gameSection.outerHeight(true);
-// let frontEndHeight = frontEndSection.outerHeight(true);
-// let fullStackHeight = fullStackSection.outerHeight(true);
-// let dataVisHeight = dataVisSection.outerHeight(true);
-// let artHeight = artSection.outerHeight(true);
 
 // Positions
 let codingBGPos = codingBackground.offset().top;
@@ -120,3 +114,47 @@ function parallaxBackground(sections) {
     }
 }
 
+$("#showMoreGames").click(() => renderMoreProjects(games));
+$("#showMoreFrontEnd").click(() => renderMoreProjects(frontEnd));
+$("#showMoreFullStack").click(() => renderMoreProjects(fullStack));
+$("#showMoreDataVis").click(() => renderMoreProjects(dataVis));
+$("#showMoreArt").click(() => renderMoreProjects(art));
+
+function renderMoreProjects(projectType) {
+    // Filter out projects that match the category (e.g. games)
+    const projectContent = projects.filter(project => project.category.indexOf(projectType) > -1);
+    // Map each element of projectContent to HTML which can be appended
+    const projectHTML = projectContent.map(project => {
+        if (project.featured) return null;
+        // Parent Container for all content
+        let container = $("<div>").addClass("project");
+        // Image and link to project
+        let imageContainer = $("<div>").addClass("projectImage");
+        let imageAnchor = $("<a href='"+ project.url +"' target='_blank'>");
+        let image = $("<img src='images/"+ project.image + "'>");
+        imageAnchor.append(image);
+        imageContainer.append(imageAnchor);
+        container.append(imageContainer);
+        // Header and text
+        let textContainer = $("<div>").addClass("projectText");
+        let textAnchor = $("<a href='"+ project.url +"' target='_blank'>");
+        let header = $("<h2>").text(project.title.toUpperCase());
+        let description = $("<p>").text(project.description);
+        const technologiesString = project.technologies.reduce((acc, cur) => {
+            return acc + ", " + cur;
+        });
+        let technologies = $("<p>").text("Technologies used: " + technologiesString);
+        let githubLink = project.github ? $("<a href='" + project.github + "'>").append($("<p>").text("See the code on Github")) : "";
+        textAnchor.append(header);
+        textAnchor.append(description);
+        textContainer.append(textAnchor);
+        textContainer.append(technologies);
+        textContainer.append(githubLink);
+        container.append(textContainer);
+        return container;
+    });
+    $("#more_"+projectType).html("");
+    projectHTML.map(project => {
+        $("#more_"+projectType).append(project);
+    });
+}

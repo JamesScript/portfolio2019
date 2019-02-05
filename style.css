@@ -87,6 +87,10 @@ ul {
     cursor: auto !important;
 }
 
+.showMore {
+    cursor: pointer;
+}
+
 /* INTRODUCTORY SECTION */
 
 .bigHeader {
@@ -324,6 +328,7 @@ ul {
 .project {
     display: flex;
     align-items: center;
+    min-height: 260px;
 }
 
 .projectImage {
