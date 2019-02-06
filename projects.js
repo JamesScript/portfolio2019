@@ -172,7 +172,7 @@ const projects = [
         image: "exerciseTracker.png",
         url: "https://jc-fcc-exercise-tracker.glitch.me/",
         github: null,
-        featured: true
+        featured: false
     },
     {
         title: "Fireflies",
@@ -203,7 +203,7 @@ const projects = [
         image: "gameReviews.png",
         url: "https://game-reviews.glitch.me/",
         github: null,
-        featured: false
+        featured: true
     },
     {
         title: "GDP Bar Chart",
@@ -352,7 +352,7 @@ const projects = [
         image: "summaryOfHumanHistory.png",
         url: "https://codepen.io/crossjames934/pen/xmNRNM",
         github: null,
-        featured: false
+        featured: true
     },
     {
         title: "Survey Form",
@@ -383,7 +383,7 @@ const projects = [
         image: "tutorial.png",
         url: "https://codepen.io/crossjames934/pen/oyELzE",
         github: null,
-        featured: false
+        featured: true
     },
     {
         title: "Choropleth Map: Academic Prowess in the USA",

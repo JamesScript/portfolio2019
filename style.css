@@ -376,7 +376,7 @@ ul {
 }
 
 /* switch to portrait view, one on top one on bottom */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .fullPage {
         flex-direction: column;
     }

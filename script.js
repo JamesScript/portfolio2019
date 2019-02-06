@@ -120,12 +120,12 @@ $("#showMoreFullStack").click(() => renderMoreProjects(fullStack));
 $("#showMoreDataVis").click(() => renderMoreProjects(dataVis));
 $("#showMoreArt").click(() => renderMoreProjects(art));
 
-function renderMoreProjects(projectType) {
+function renderMoreProjects(projectType, showFeatured = false) {
     // Filter out projects that match the category (e.g. games)
     const projectContent = projects.filter(project => project.category.indexOf(projectType) > -1);
     // Map each element of projectContent to HTML which can be appended
     const projectHTML = projectContent.map(project => {
-        if (project.featured) return null;
+        if (project.featured !== showFeatured) return null;
         // Parent Container for all content
         let container = $("<div>").addClass("project");
         // Image and link to project
@@ -153,8 +153,15 @@ function renderMoreProjects(projectType) {
         container.append(textContainer);
         return container;
     });
-    $("#more_"+projectType).html("");
+    let prefix = showFeatured ? "#featured_" : "#more_" ;
+    $(prefix+projectType).html("");
     projectHTML.map(project => {
-        $("#more_"+projectType).append(project);
+        $(prefix+projectType).append(project);
     });
 }
+
+// Show featured projects in each section
+const categories = [games, frontEnd, fullStack, dataVis, art];
+categories.map(category => {
+    renderMoreProjects(category, true);
+});
